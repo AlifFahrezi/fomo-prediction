@@ -468,7 +468,7 @@ with tab3:
     image_paths = sorted(image_paths)
 
     if image_paths:
-        group_photo_local = image_paths[1]
+        group_photo_local = image_paths[0]
         def _img_data_uri(p):
             try:
                 with open(p, 'rb') as f:
@@ -526,3 +526,4 @@ with tab3:
     st.markdown('<div class="card" style="background-color:#eef2f7;">', unsafe_allow_html=True)
     st.caption('Made with ❤️ by the FOMO Prediction Team. Experiment with different inputs and enjoy exploring your digital habits!')
     st.markdown('</div>', unsafe_allow_html=True)
+
